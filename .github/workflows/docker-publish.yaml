@@ -40,6 +40,6 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           build-args: GITHUB_PAT=${{ secrets.PAT }}
-          tags: ghcr.io/openproblems-bio/${{ matrix.config.image }}:${{ matrix.config.version }}${{ matrix.config.extra_tags }}
+          tags: ghcr.io/openproblems-bio/${{ matrix.config.image }}:${{ matrix.config.version }},ghcr.io/openproblems-bio/${{ matrix.config.image }}:latest
           file: ${{ matrix.config.image }}/${{ matrix.config.version }}.Dockerfile
           push: true
