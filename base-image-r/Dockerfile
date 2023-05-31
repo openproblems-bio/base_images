@@ -1,4 +1,4 @@
-FROM eddelbuettel/r2u@sha256:1d3a92aab5abad11787cd6b6c9479960db9f4e56dcc7f837768da2e3f3c4dfe2
+FROM eddelbuettel/r2u:22.04
 
 RUN Rscript -e 'if (!requireNamespace("remotes", quietly = TRUE)) install.packages("remotes")' && \
     Rscript -e 'remotes::install_cran("anndata", repos = "https://cran.rstudio.com")'
