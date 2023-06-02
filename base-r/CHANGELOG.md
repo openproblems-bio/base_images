@@ -1,6 +1,6 @@
 # `ghcr.io/openproblems-bio/base-r:v1`
 
-* Initial release. A R2U 22.04 image with the following packages installed:
+* Initial release. An R2U 22.04 image with the following packages installed:
   - R release
   - R packages: remotes, anndata and BiocManager
   - Python 3.10
