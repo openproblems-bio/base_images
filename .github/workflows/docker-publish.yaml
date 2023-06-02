@@ -18,7 +18,6 @@ jobs:
         config:
           - { image: 'base-image-python', version: 'v1' }
           - { image: 'base-image-r', version: 'v1' }
-          - { image: 'base-image-bioc', version: 'v1' }
     
     steps:
       - uses: actions/checkout@v2
