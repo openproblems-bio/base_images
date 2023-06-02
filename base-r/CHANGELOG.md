@@ -1,4 +1,4 @@
-# `ghcr.io/openproblems-bio/base-image-r:v1`
+# `ghcr.io/openproblems-bio/base-r:v1`
 
 * Initial release. A R2U 22.04 image with the following packages installed:
   - R release

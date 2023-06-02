@@ -1,6 +1,6 @@
 # Base image with R
 
-Available at:  ghcr.io/openproblems-bio/base-image-r:<tag?>
+Available at:  ghcr.io/openproblems-bio/base-r:<tag?>
 
 * Uses [r2u](https://github.com/eddelbuettel/r2u)
 * Has Python 3.10
