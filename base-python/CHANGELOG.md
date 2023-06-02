@@ -1,3 +1,6 @@
 # `ghcr.io/openproblems-bio/base-python:v1`
 
-* Initial release. A Python 3.10 container with the anndata 0.8, pyyaml and request packages already installed.
+* Initial release. An Python 3.10 image with the following packages installed:
+  - `anndata~=0.8.0`
+  - `pyyaml`
+  - `requests`
