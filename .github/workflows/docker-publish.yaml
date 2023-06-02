@@ -3,6 +3,7 @@ name: Base images for openproblems v2
 on:
   schedule:
     - cron: '00 22 * * 6'
+  workflow_dispatch:
 
 
 jobs:
