@@ -8,7 +8,7 @@ RUN apt-get update && \
   rm -rf /var/lib/apt/lists/*
 
 RUN pip install --upgrade pip && \
-  pip install --upgrade --no-cache-dir "anndata~=0.8.0" "pyyaml" "requests"
+  pip install --upgrade --no-cache-dir "anndata~=0.8.0" "pyyaml" "requests" "rpy2"
 
 LABEL org.opencontainers.image.description "Base image with R and Python"
 
