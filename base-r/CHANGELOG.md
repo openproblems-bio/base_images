@@ -8,4 +8,4 @@
   - R release
   - R packages: remotes, anndata and BiocManager
   - Python 3.10
-  - Python packages: anndata 0.8.0, pyyaml, request, rpy2
+  - Python packages: anndata 0.8.0, pyyaml, request
