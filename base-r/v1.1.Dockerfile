@@ -14,4 +14,4 @@ LABEL org.opencontainers.image.description "Base image with R and Python"
 
 LABEL org.opencontainers.image.source "https://github.com/openproblems-bio/base-images"
 
-LABEL org.opencontainers.image.version v1
+LABEL org.opencontainers.image.version v1.1
