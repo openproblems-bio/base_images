@@ -1,3 +1,11 @@
+# Base images v1.0.1
+
+## MINOR CHANGES
+
+* `base_python`: Added scanpy as a dependency.
+
+* `base_r`: Added scanpy as a dependency.
+
 # Base images v1.0.0
 
 Initial release containing the following base images:

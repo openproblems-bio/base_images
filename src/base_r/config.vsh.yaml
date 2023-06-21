@@ -18,6 +18,7 @@ platforms:
         packages:
           - rpy2
           - anndata~=0.8.0
+          - scanpy
           - pyyaml
           - requests
           - jsonschema
