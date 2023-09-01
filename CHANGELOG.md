@@ -1,3 +1,9 @@
+# BASE images v1.0.2
+
+## MINOR CHANGES
+
+* `base_r`: added `bit64` as a dependency.
+
 # Base images v1.0.1
 
 ## MINOR CHANGES
