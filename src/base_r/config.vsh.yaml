@@ -26,4 +26,5 @@ platforms:
         packages:
           - anndata
           - BiocManager
+          - reticulate
           - bit64
