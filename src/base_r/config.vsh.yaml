@@ -26,5 +26,6 @@ platforms:
         packages:
           - anndata
           - BiocManager
+          - bit64
         github:
           - rstudio/reticulate
