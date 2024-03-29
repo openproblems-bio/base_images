@@ -13,7 +13,6 @@ jobs:
 
     outputs:
       component_matrix: ${{ steps.set_matrix.outputs.matrix }}
-      cache_key: ${{ steps.cache.outputs.cache_key }}
 
     steps:
     - uses: actions/checkout@v4
@@ -49,27 +48,30 @@ jobs:
         component: ${{ fromJson(needs.list.outputs.component_matrix) }}
 
     steps:
-    - uses: actions/checkout@v4
+      # Remove unnecessary files to free up space.
+      - uses: data-intuitive/reclaim-the-bytes@v2
 
-    - uses: viash-io/viash-actions/setup@v5
-        
-    - name: Login to container registry
-      uses: docker/login-action@v3
-      with:
-        registry: ghcr.io
-        username: ${{ secrets.GTHB_USER }}
-        password: ${{ secrets.GTHB_PAT }}
+      - uses: actions/checkout@v4
 
-    - name: Build container
-      uses: viash-io/viash-actions/ns-build@v5
-      with:
-        platform: docker
-        src: ${{ matrix.component.dir }}
-        setup: build
+      - uses: viash-io/viash-actions/setup@v5
+          
+      - name: Login to container registry
+        uses: docker/login-action@v3
+        with:
+          registry: ghcr.io
+          username: ${{ secrets.GTHB_USER }}
+          password: ${{ secrets.GTHB_PAT }}
 
-    - name: Push container
-      uses: viash-io/viash-actions/ns-build@v5
-      with:
-        platform: docker
-        src: ${{ matrix.component.dir }}
-        setup: push
+      - name: Build container
+        uses: viash-io/viash-actions/ns-build@v4
+        with:
+          platform: docker
+          src: ${{ matrix.component.dir }}
+          setup: build
+
+      - name: Push container
+        uses: viash-io/viash-actions/ns-build@v4
+        with:
+          platform: docker
+          src: ${{ matrix.component.dir }}
+          setup: push

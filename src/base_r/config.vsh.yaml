@@ -1,9 +1,9 @@
 functionality:
   name: base_r
-  description: An R2U 22.04 with anndata preinstalled.
+  description: An R2U 22.04 image with anndata preinstalled.
 platforms:
   - type: docker
-    image: eddelbuettel/r2u:22.04
+    image: rocker/r2u:22.04
     setup:
       - type: apt
         packages:

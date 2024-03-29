@@ -1,10 +1,22 @@
-# BASE images v1.0.2
+# OpenProblems Base Images v1.0.3
+
+## NEW FUNCTIONALITY
+
+* Added `base_pytorch_nvidia` image based on `nvcr.io/pytorch`.
+
+## MINOR CHANGES
+
+* `base_python`: Upgraded to Python 3.11.
+
+* `base_r`: Upgraded to Python 3.11.
+
+# OpenProblems Base Images v1.0.2
 
 ## MINOR CHANGES
 
 * `base_r`: added `bit64` as a dependency.
 
-# Base images v1.0.1
+# OpenProblems Base Images v1.0.1
 
 ## MINOR CHANGES
 
@@ -12,7 +24,7 @@
 
 * `base_r`: Added scanpy as a dependency.
 
-# Base images v1.0.0
+# OpenProblems Base Images v1.0.0
 
 Initial release containing the following base images:
 
