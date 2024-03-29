@@ -1,5 +1,5 @@
 functionality:
-  name: base_pytorch_cuda
+  name: base_pytorch_nvidia
   description: An nvcr.io pytorch 22.12 with anndata preinstalled.
 platforms:
   - type: docker
