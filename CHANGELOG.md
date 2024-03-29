@@ -2,7 +2,7 @@
 
 ## NEW FUNCTIONALITY
 
-* Added `base_pytorch` image based on `nvcr.io/pytorch`.
+* Added `base_pytorch_cuda` image based on `nvcr.io/pytorch`.
 
 ## MINOR CHANGES
 
