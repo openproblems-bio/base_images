@@ -63,14 +63,14 @@ jobs:
           password: ${{ secrets.GTHB_PAT }}
 
       - name: Build container
-        uses: viash-io/viash-actions/ns-build@v4
+        uses: viash-io/viash-actions/ns-build@v5
         with:
           platform: docker
           src: ${{ matrix.component.dir }}
           setup: build
 
       - name: Push container
-        uses: viash-io/viash-actions/ns-build@v4
+        uses: viash-io/viash-actions/ns-build@v5
         with:
           platform: docker
           src: ${{ matrix.component.dir }}
