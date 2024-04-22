@@ -28,3 +28,5 @@ platforms:
           - BiocManager
           - reticulate
           - bit64
+      - type: r
+        github: rstudio/reticulate
