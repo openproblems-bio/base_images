@@ -24,7 +24,6 @@ jobs:
       uses: viash-io/viash-actions/ns-list@v6
       with:
         engine: docker
-        src: src
         format: json
 
   # phase 2
@@ -59,10 +58,16 @@ jobs:
 
       - name: Build image
         run: |
-          ${{matrix.component.executable}} ---engine docker ---setup build ---verbose
+          viash run ${{matrix.component.config}} -- \
+            ---engine docker \
+            ---setup build \
+            ---verbose
       
       # only push the image if the branch is the default branch
       - name: Push image
         if: github.ref == 'refs/heads/${{ github.event.repository.default_branch }}'
         run: |
-          ${{matrix.component.executable}} ---engine docker ---setup push ---verbose
+          viash run ${{matrix.component.config}} -- \
+            ---engine docker \
+            ---setup build \
+            ---verbose
