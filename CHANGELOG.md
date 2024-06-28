@@ -1,3 +1,30 @@
+# OpenProblems Base Images v1.1.0
+
+## BREAKING CHANGES
+
+* Moved location of the base images:
+  - `ghcr.io/openproblems-bio/base_python` -> `ghcr.io/openproblems-bio/base_images/python`
+  - `ghcr.io/openproblems-bio/base_pytorch_nvidia` -> `ghcr.io/openproblems-bio/base_images/pytorch_nvidia`
+  - `ghcr.io/openproblems-bio/base_r` -> `ghcr.io/openproblems-bio/base_images/r`
+
+* `python`: Upgraded AnnData to `0.10` and Scanpy to `1.10`.
+
+* `pytorch_nvidia`: Upgraded AnnData to `0.10` and Scanpy to `1.10`.
+
+* `r`: Upgraded AnnData to `0.10` and Scanpy to `1.10`.
+
+## NEW FUNCTIONALITY
+
+* `tensorflow_nvidia`: Added a new image based on `nvcr.io/nvidia/tensorflow:24.06-tf2-py3`.
+
+## MINOR CHANGES
+
+* `pytorch_nvidia`: Upgraded base image from `nvcr.io/nvidia/pytorch:24.03-py3` to `nvcr.io/nvidia/pytorch:24.06-py3`.
+
+* Bumped Viash version to 0.9.0-RC6.
+
+* Updated CI to use `viash-actions@v6`. Build but not push images on PRs.
+
 # OpenProblems Base Images v1.0.5
 
 ## MINOR CHANGES
