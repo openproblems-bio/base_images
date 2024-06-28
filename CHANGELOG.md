@@ -16,6 +16,7 @@
 
 * `base_pytorch_nvidia`: Upgraded base image from `nvcr.io/nvidia/pytorch:24.03-py3` to `nvcr.io/nvidia/pytorch:24.06-py3`.
 
+* Updated CI to use `viash-actions@v6`. Build but not push images on PRs.
 
 # OpenProblems Base Images v1.0.5
 
