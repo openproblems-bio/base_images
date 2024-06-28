@@ -1,7 +1,6 @@
-functionality:
-  name: tensorflow_nvidia
-  description: An nvcr.io tensorflow 24.06-tf2-py3 with anndata preinstalled.
-platforms:
+name: tensorflow_nvidia
+description: An nvcr.io tensorflow 24.06-tf2-py3 with anndata preinstalled.
+engines:
   - type: docker
     image: nvcr.io/nvidia/tensorflow:24.06-tf2-py3
     setup:

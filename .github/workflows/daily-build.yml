@@ -23,7 +23,7 @@ jobs:
     - id: ns_list
       uses: viash-io/viash-actions/ns-list@v6
       with:
-        platform: docker
+        engine: docker
         src: src
         format: json
 

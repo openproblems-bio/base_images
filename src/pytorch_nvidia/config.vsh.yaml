@@ -1,7 +1,6 @@
-functionality:
-  name: pytorch_nvidia
-  description: An nvcr.io pytorch 24.06-py3 with anndata preinstalled.
-platforms:
+name: pytorch_nvidia
+description: An nvcr.io pytorch 24.06-py3 with anndata preinstalled.
+engines:
   - type: docker
     image: nvcr.io/nvidia/pytorch:24.06-py3
     setup:
