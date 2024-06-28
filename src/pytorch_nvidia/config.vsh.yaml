@@ -1,5 +1,5 @@
 functionality:
-  name: base_pytorch_nvidia
+  name: pytorch_nvidia
   description: An nvcr.io pytorch 24.06-py3 with anndata preinstalled.
 platforms:
   - type: docker

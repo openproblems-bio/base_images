@@ -1,5 +1,5 @@
 functionality:
-  name: base_python
+  name: python
   description: A Python 3.11 image with anndata preinstalled.
 platforms:
   - type: docker

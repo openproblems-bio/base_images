@@ -1,5 +1,5 @@
 functionality:
-  name: base_r
+  name: r
   description: An R2U 22.04 image with anndata preinstalled.
 platforms:
   - type: docker
