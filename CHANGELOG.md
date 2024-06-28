@@ -1,3 +1,15 @@
+# OpenProblems Base Images v1.0.5
+
+## MINOR CHANGES
+
+* Switch back to CRAN `reticulate`
+
+# OpenProblems Base Images v1.0.4
+
+## MINOR CHANGES
+
+* Switch to `rstudio/reticulate` to circumvent a bug in the `reticulate` package.
+
 # OpenProblems Base Images v1.0.3
 
 ## NEW FUNCTIONALITY

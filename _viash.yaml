@@ -4,6 +4,6 @@ source: src
 target: target
 
 config_mods: |
-  .functionality.version := '1.0.4'
+  .functionality.version := '1.0.5'
   .platforms[.type == 'docker'].target_registry := 'ghcr.io/openproblems-bio'
   .platforms[.type == 'docker'].target_image_source := 'https://github.com/openproblems-bio/base-images'
