@@ -25,6 +25,7 @@ jobs:
       with:
         platform: docker
         src: src
+        format: json
 
   # phase 2
   build:
