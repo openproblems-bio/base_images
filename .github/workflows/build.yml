@@ -72,5 +72,5 @@ jobs:
         run: |
           viash run ${{matrix.component.config}} -- \
             ---engine docker \
-            ---setup build \
+            ---setup push \
             ---verbose
