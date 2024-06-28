@@ -1,3 +1,22 @@
+# OpenProblems Base Images v1.1.0
+
+## BREAKING CHANGES
+
+* `base_python`: Upgraded AnnData to `0.10` and Scanpy to `1.10`.
+
+* `base_pytorch_nvidia`: Upgraded AnnData to `0.10` and Scanpy to `1.10`.
+
+* `base_r`: Upgraded AnnData to `0.10` and Scanpy to `1.10`.
+
+## NEW FUNCTIONALITY
+
+* `base_tensorflow_nvidia`: Added a new image based on `nvcr.io/nvidia/tensorflow:24.06-tf2-py3`.
+
+## MINOR CHANGES
+
+* `base_pytorch_nvidia`: Upgraded base image from `nvcr.io/nvidia/pytorch:24.03-py3` to `nvcr.io/nvidia/pytorch:24.06-py3`.
+
+
 # OpenProblems Base Images v1.0.5
 
 ## MINOR CHANGES
