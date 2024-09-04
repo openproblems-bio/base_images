@@ -1,5 +1,6 @@
-# Base images
+# The base images have been moved to [openproblems-bio/core](https://github.com/openproblems-bio/core/tree/main/base_images)
 
+# Base images
 
 <!-- This file is rendered by running 'quarto render README.qmd' -->
 
